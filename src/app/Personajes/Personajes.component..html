@@ -1,20 +1,20 @@
+<div id= "content">
+    <p>Personajes</p>
 
-
-<p>Personajes</p>
-
-<button (click)="onClickActivar()">
-    <div [ngSwitch]="activo">
+   <button (click)="onClickActivar()">
+     <div [ngSwitch]="activo">
         <p *ngSwitchCase="true">Ocultar</p>
         <p *ngSwitchCase="false">Mostrar</p>
-    </div>
+     </div>
     
-</button>
+ </button>
 
-<div *ngIf="activo">
+ <div *ngIf="activo">
     <ul>
-        <li *ngFor ="let p of personajes">{{p}} </li>
+        <li *ngFor ="let p of personajes" (click)="oneRemovePersonaje(p)">{{p}} </li>
     </ul>
-</div>
-<div *ngIf="!activo">
-    <p>Sin Personajes que mostrar</p>
+ </div>
+   <div *ngIf="!activo">
+     <p>Sin Personajes que mostrar</p>
+   </div>
 </div>

@@ -3,14 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { PersonajesComponent } from './Personajes/Personajes.component';
+import { PersonajeImputComponent } from './Personajes/personaje-imput/personaje-imput.component';
+import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app..ruting.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PersonajesComponent
+    PersonajesComponent,
+    PersonajeImputComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

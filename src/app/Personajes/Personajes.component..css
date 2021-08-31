@@ -1,7 +1,13 @@
 
+#contenet{
+    background-color: gray;
+    border-style: dashed;
+    padding: 20px;
+}
+
 
 p{
-    color: blueviolet;
+    color: white;
     font-family: Georgia, 'Times New Roman', Times, serif ;
     font-weight: bolder;
     text-align: center;
